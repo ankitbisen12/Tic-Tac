@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="modal_title">Hi,Tic Toe Game</h1>
+      <h1 class="rules">Rules:-</h1>
+      <p>
+        1)The game is played on a grid that's 3 squares by 3 squares.<br />
+        2)You are X, your friend (or the computer in this case) is 0. Players
+        take turns putting their marks in empty squares.<br />
+        3)The first player to get 3 of her marks in a row (up, down, across, or
+        diagonally) is the winner.<br />
+        4)When all 9 squares are full, the game is over(TIE).
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <main>
+      <div>
+        <h1>
+          <span class="h1Yel">T</span>
+          <span class="h1Red">I</span>
+          <span class="h1Yel">C-</span>
+          <span class="h1Red">T</span>
+          <span class="h1Yel">A</span>
+          <span class="h1Red">C-</span>
+          <span class="h1Yel">T</span>
+          <span class="h1Red">O</span>
+          <span class="h1Yel">E</span>
+        </h1>
+      </div>
+      <div class="cells">
+        <div class="box">
+          <i class="fa-regular fa-circle-user fa-2x"></i>
+          <h3>Player 1</h3>
+          <span class="span1">X</span>
+        </div>
+        <div class="box">
+          <i class="fa-regular fa-circle-user fa-2x"></i>
+          <h3>Player 2</h3>
+          <span class="span2">0</span>
+        </div>
+      </div>
+      <section class="container">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </section>
+      <section class="display result hidden"></section>
+      <section class="resetBtn">
+        <button id="reset">New Game</button>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
